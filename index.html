@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>M.Ahtisham — UI/UX Designer & Digital Marketer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="lb-close">&times;</span>
+  <img id="lb-img" src="" alt="preview"/>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">M.<span>Ahtisham</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#booking">Book Me</a></li>
+  </ul>
+  <button class="nav-btn" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="glow" style="width:480px;height:480px;right:-60px;top:-40px;"></div>
+  <div class="glow" style="width:340px;height:340px;left:50%;bottom:-60px;transform:translateX(-50%);animation-delay:2s;"></div>
+  <div class="star" style="left:2%;top:28%;animation-delay:0s;"></div>
+  <div class="star" style="left:48%;top:12%;animation-delay:.6s;"></div>
+  <div class="star" style="left:10%;top:60%;animation-delay:1.1s;"></div>
+  <div class="star" style="left:63%;top:72%;animation-delay:1.6s;"></div>
+  <div class="star" style="left:89%;top:22%;animation-delay:.9s;"></div>
+  <div class="star" style="left:90%;top:62%;animation-delay:1.4s;"></div>
+  <div class="star" style="left:7%;top:92%;animation-delay:.3s;"></div>
+  <div class="star" style="left:91%;top:92%;animation-delay:1.9s;"></div>
+
+  <div class="avail-badge hero-anim"><span class="dot"></span> Available for Work</div>
+  <h1 class="hero-title hero-anim"><span class="accent">Design</span> at the<br>Edge of Digital</h1>
+  <p class="hero-sub hero-anim">UI/UX Designer &amp; Digital Marketing Specialist<br>with 2+ years of freelance experience.<br>Crafting storefronts and brand identities that convert.</p>
+  <div class="hero-btns hero-anim">
+    <a href="#work" class="btn-primary">View My Work</a>
+    <a href="#booking" class="btn-outline">Book a Call</a>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <p class="sec-label reveal">Who I Am</p>
+      <h2 class="sec-title reveal">About <span>Me</span></h2>
+      <p class="reveal">I'm Muhammad Ahtisham Aslam — a UI/UX Designer and Digital Marketing Specialist based in Arifwala, Pakistan.</p>
+      <p class="reveal">I help brands look better and convert more — from first impression to final conversion. Specializing in UI/UX, Shopify, branding, and paid media.</p>
+      <p class="reveal">Currently pursuing BSIT from the University of Sahiwal while delivering full-time freelance work globally.</p>
+      <div class="about-stats">
+        <div class="stat-card reveal"><div class="stat-num">10+</div><div class="stat-lbl">Projects</div></div>
+        <div class="stat-card reveal"><div class="stat-num">50+</div><div class="stat-lbl">Creatives</div></div>
+        <div class="stat-card reveal"><div class="stat-num">5+</div><div class="stat-lbl">Brands</div></div>
+        <div class="stat-card reveal"><div class="stat-num">2+</div><div class="stat-lbl">Years Exp.</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="profile-card reveal">
+        <div class="p-glow"></div>
+        <div class="p-name">Muhammad Ahtisham Aslam</div>
+        <div class="p-sub">Designing faster &amp; more impactful digital experiences — globally</div>
+      </div>
+      <div class="pills-wrap reveal">
+        <span class="pill">UI/UX Designer</span>
+        <span class="pill">Shopify Dev</span>
+        <span class="pill">Digital Marketing</span>
+        <span class="pill">Graphic Designer</span>
+        <span class="pill">Luxury Branding</span>
+        <span class="pill">Mobile App UI</span>
+        <span class="pill">Web Developer</span>
+        <span class="pill">SEO Specialist</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WORK / PORTFOLIO ══ -->
+<section id="work">
+  <div style="max-width:1200px;margin:0 auto;">
+    <p class="sec-label reveal">My Work</p>
+    <h2 class="sec-title reveal">Portfolio <span>Gallery</span></h2>
+
+    <!-- Tabs -->
+    <div class="work-tabs reveal">
+      <button class="work-tab active" data-tab="logo">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8v.01L12 12 4 8.01V8l8-3.82zM4 10.18l8 4 8-4V17l-8 4-8-4v-6.82z"/></svg>
+        Logo Design
+      </button>
+      <button class="work-tab" data-tab="banner">
+        <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zm-10-7l-3 3.72L6 13l-3 4h18l-5-6.5z"/></svg>
+        Banners
+      </button>
+      <button class="work-tab" data-tab="poster">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        Posters
+      </button>
+      <button class="work-tab" data-tab="uiux">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+        UI/UX Design
+      </button>
+      <button class="work-tab" data-tab="web">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+        Web Development
+      </button>
+      <button class="work-tab" data-tab="mobile">
+        <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+        Mobile Apps
+      </button>
+    </div>
+
+    <div class="work-panels">
+
+      <!-- LOGO -->
+      <div class="work-panel active" id="panel-logo">
+        <div class="work-grid">
+          <div class="add-card-wrap">
+            <label class="add-card" for="upload-logo">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add Logo Design</span>
+            </label>
+            <input class="file-input" id="upload-logo" type="file" accept="image/*" multiple data-category="Logo Design" onchange="handleWorkUpload(this)"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- BANNER -->
+      <div class="work-panel" id="panel-banner">
+        <div class="work-grid">
+          <div class="add-card-wrap">
+            <label class="add-card" for="upload-banner">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add Banner</span>
+            </label>
+            <input class="file-input" id="upload-banner" type="file" accept="image/*" multiple data-category="Banner Design" onchange="handleWorkUpload(this)"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- POSTER -->
+      <div class="work-panel" id="panel-poster">
+        <div class="work-grid">
+          <div class="add-card-wrap">
+            <label class="add-card" for="upload-poster">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add Poster</span>
+            </label>
+            <input class="file-input" id="upload-poster" type="file" accept="image/*" multiple data-category="Poster Design" onchange="handleWorkUpload(this)"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- UIUX -->
+      <div class="work-panel" id="panel-uiux">
+        <div class="work-grid">
+          <div class="add-card-wrap">
+            <label class="add-card" for="upload-uiux">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add UI/UX Work</span>
+            </label>
+            <input class="file-input" id="upload-uiux" type="file" accept="image/*" multiple data-category="UI/UX Design" onchange="handleWorkUpload(this)"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEB -->
+      <div class="work-panel" id="panel-web">
+        <div class="work-grid">
+          <div class="add-card-wrap">
+            <label class="add-card" for="upload-web">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add Web Project</span>
+            </label>
+            <input class="file-input" id="upload-web" type="file" accept="image/*" multiple data-category="Web Development" onchange="handleWorkUpload(this)"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="work-panel" id="panel-mobile">
+        <div class="work-grid">
+          <div class="add-card-wrap">
+            <label class="add-card" for="upload-mobile">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add Mobile App</span>
+            </label>
+            <input class="file-input" id="upload-mobile" type="file" accept="image/*" multiple data-category="Mobile App" onchange="handleWorkUpload(this)"/>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /work-panels -->
+  </div>
+</section>
+
+<!-- ══ CERTIFICATIONS ══ -->
+<section id="certifications">
+  <div style="max-width:1200px;margin:0 auto;">
+    <p class="sec-label reveal">Credentials</p>
+    <h2 class="sec-title reveal">My <span>Certifications</span></h2>
+    <div class="cert-upload-grid">
+
+      <!-- Placeholder certs — click to view -->
+      <div class="cert-item reveal" onclick="alert('Upload your SEO certificate image to see it here!')">
+        <div class="cert-thumb">
+          <div class="cert-placeholder-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-1 8l-3-3 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+            <span>SEO Certificate</span>
+          </div>
+          <div class="cert-view-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            <span>View</span>
+          </div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">SEO Certification</div>
+          <div class="cert-issuer">Digital Marketing</div>
+        </div>
+      </div>
+
+      <div class="cert-item reveal" onclick="alert('Upload your Google Ads certificate image!')">
+        <div class="cert-thumb">
+          <div class="cert-placeholder-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-1 8l-3-3 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+            <span>Google Ads</span>
+          </div>
+          <div class="cert-view-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            <span>View</span>
+          </div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">Google Ads</div>
+          <div class="cert-issuer">Google</div>
+        </div>
+      </div>
+
+      <div class="cert-item reveal" onclick="alert('Upload your IBM certificate image!')">
+        <div class="cert-thumb">
+          <div class="cert-placeholder-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-1 8l-3-3 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+            <span>IBM</span>
+          </div>
+          <div class="cert-view-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            <span>View</span>
+          </div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">IBM Certified</div>
+          <div class="cert-issuer">IBM</div>
+        </div>
+      </div>
+
+      <!-- Add cert -->
+      <div class="cert-add-wrap">
+        <label class="add-card" for="upload-cert" style="aspect-ratio:4/3;">
+          <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          <span>Upload Certificate</span>
+        </label>
+        <input class="file-input" id="upload-cert" type="file" accept="image/*" multiple onchange="handleCertUpload(this)"/>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills">
+  <div style="max-width:1200px;margin:0 auto;">
+    <p class="sec-label reveal">What I Know</p>
+    <h2 class="sec-title reveal">My <span>Skills</span></h2>
+    <div class="skills-grid">
+
+      <!-- Design -->
+      <div class="skill-cat reveal">
+        <div class="skill-cat-ttl">
+          <svg viewBox="0 0 24 24"><path d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67A2.5 2.5 0 0112 22zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5a.54.54 0 00-.14-.35c-.41-.46-.63-1.05-.63-1.65a2.5 2.5 0 012.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z"/><circle cx="6.5" cy="11.5" r="1.5"/><circle cx="9.5" cy="7.5" r="1.5"/><circle cx="14.5" cy="7.5" r="1.5"/><circle cx="17.5" cy="11.5" r="1.5"/></svg>
+          Design
+        </div>
+        <div class="skill-items">
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M15.5 11c1.93 0 3.5 1.57 3.5 3.5S17.43 18 15.5 18c-.96 0-1.82-.38-2.45-1H12v2H8v2H6v-2H4v-4h2l3.55-3.55C9.2 11.38 9 10.97 9 10.5 9 8.57 10.57 7 12.5 7S16 8.57 16 10.5c0 .2-.02.39-.05.57l-.45-.07zM11 10.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5S13.33 9 12.5 9 11 9.67 11 10.5zM16 14c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></svg>
+            <span>Figma</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            <span>Adobe XD</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M21 6.5l-4-4H7L3 6.5v11l4 4h10l4-4v-11zM12 18.5c-3.58 0-6.5-2.92-6.5-6.5S8.42 5.5 12 5.5s6.5 2.92 6.5 6.5-2.92 6.5-6.5 6.5zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>
+            <span>Photoshop</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+            <span>Canva</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm4 6h10v2H7v-2z"/></svg>
+            <span>Wireframing &amp; Prototyping</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
+            <span>Typography &amp; Layout</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Development -->
+      <div class="skill-cat reveal">
+        <div class="skill-cat-ttl">
+          <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          Development
+        </div>
+        <div class="skill-items">
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+            <span>Shopify</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <span>WordPress</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M12 17.56L16.07 16l-4.07 1.56zm4.07-7.56L12 4.44 7.93 10l4.07-1.56L16.07 10zM2 21l3.5-7L2 7h9.84l.16.39V21H2zm20-14l-3.5 7 3.5 7h-9.84l-.16-.39V7H22z"/></svg>
+            <span>HTML &amp; CSS</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M11.5 2C6.26 2 2 6.26 2 11.5S6.26 21 11.5 21c.85 0 1.67-.11 2.46-.32-.41-.37-.76-.82-1.01-1.34-.46.1-.94.16-1.45.16C7.36 19.5 4.5 16.64 4.5 11.5S7.36 3.5 11.5 3.5s7 2.86 7 7c0 .96-.13 1.88-.38 2.74.52.14 1 .39 1.42.71.3-1.07.46-2.2.46-3.45C20 6.26 15.74 2 11.5 2zm4.56 11.74l5.07 5.07-1.41 1.41-5.07-5.07v-.79l-.27-.28c-1.03.86-2.35 1.37-3.88 1.37C7.74 15.45 5 12.71 5 9.35S7.74 3.25 11.1 3.25s6.1 2.74 6.1 6.1c0 1.53-.52 2.86-1.37 3.88l.28.27h.79l-.04-.76zm-5.06.71c2.42 0 4.35-1.93 4.35-4.35S13.42 5.75 11 5.75 6.65 7.68 6.65 10.1 8.58 14.45 11 14.45z"/></svg>
+            <span>Python</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-.5 14.5v-9l7 4.5-7 4.5z"/></svg>
+            <span>E-Commerce</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing -->
+      <div class="skill-cat reveal">
+        <div class="skill-cat-ttl">
+          <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+          Marketing
+        </div>
+        <div class="skill-items">
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <span>SEO</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+            <span>Google Ads</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Email Marketing</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H6.5v-7H9v7zm-1.25-8c-.83 0-1.5-.68-1.5-1.5s.67-1.5 1.5-1.5c.82 0 1.5.68 1.5 1.5S8.58 9 7.75 9zM18 17h-2.5v-3.5c0-.83-.68-1.5-1.5-1.5s-1.5.67-1.5 1.5V17H10v-7h2.5v1c.46-.69 1.23-1 2-1 1.66 0 3 1.34 3 3V17z"/></svg>
+            <span>Facebook &amp; Instagram Ads</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+            <span>Social Media Marketing</span>
+          </div>
+          <div class="skill-row reveal">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Content Strategy</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience">
+  <div style="max-width:800px;margin:0 auto;">
+    <p class="sec-label reveal">Work History</p>
+    <h2 class="sec-title reveal">My <span>Experience</span></h2>
+    <div class="exp-wrap">
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div><div class="exp-title">UI/UX Designer &amp; Shopify Specialist</div><div class="exp-company">Freelance · Remote</div></div>
+          <span class="exp-date">Jan 2024 – Present</span>
+        </div>
+        <ul class="exp-list">
+          <li>Designed UI/UX for 10+ brands — Shopify storefronts, landing pages, and mobile interfaces</li>
+          <li>Developed full luxury branding package for Alif Perfume — wireframes, prototypes, posters, campaign strategy</li>
+          <li>Created responsive web designs improving product presentation and customer journey</li>
+          <li>Produced brand guidelines (color palettes, typography, layout) for 5+ brands</li>
+          <li>Delivered SEO-optimized product descriptions increasing organic visibility</li>
+        </ul>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div><div class="exp-title">Social Media Graphic Designer</div><div class="exp-company">Freelance · Restaurant &amp; Brand Clients, Lahore</div></div>
+          <span class="exp-date">Jan 2024 – Present</span>
+        </div>
+        <ul class="exp-list">
+          <li>Designed 50+ social media creatives for restaurants across Instagram &amp; Facebook</li>
+          <li>Executed Ramadan campaigns, discount promotions, and seasonal content calendars</li>
+          <li>Maintained brand identity across all touchpoints per client</li>
+          <li>Wrote SEO-optimized captions and hashtag strategies</li>
+          <li>Delivered revisions within 24 hours directly to clients</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EDUCATION ══ -->
+<section id="education">
+  <div style="max-width:780px;margin:0 auto;">
+    <p class="sec-label reveal">Academic Background</p>
+    <h2 class="sec-title reveal">My <span>Education</span></h2>
+    <div class="edu-wrap">
+      <div class="edu-item reveal">
+        <div class="edu-degree">Bachelor of Science in IT (BSIT)</div>
+        <div class="edu-school">University of Sahiwal</div>
+        <div class="edu-meta">August 2023 – August 2027 · Sahiwal, Pakistan</div>
+        <span class="edu-badge">CGPA: 3.2</span>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-degree">FSc Pre-Medical</div>
+        <div class="edu-school">Beacon College</div>
+        <div class="edu-meta">June 2021 – June 2023 · Pakistan</div>
+        <span class="edu-badge">Marks: 832 / 1100</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BOOKING ══ -->
+<section id="booking">
+  <div class="booking-grid">
+    <div>
+      <p class="sec-label reveal">Work With Me</p>
+      <h2 class="sec-title reveal">Book a <span>Session</span></h2>
+      <p class="reveal" style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:24px;">Have a project in mind? Need UI/UX design, a Shopify store, branding, or digital marketing? Fill the form and I'll get back to you within 24 hours.</p>
+      <div class="contact-rows reveal">
+        <a href="mailto:mirzaahtisham326@gmail.com" class="c-row">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          mirzaahtisham326@gmail.com
+        </a>
+        <a href="tel:+923266893326" class="c-row">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          +92 326 6893326
+        </a>
+        <a href="https://linkedin.com/in/mirzaahtisham" target="_blank" class="c-row">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H6.5v-7H9v7zm-1.25-8c-.83 0-1.5-.68-1.5-1.5s.67-1.5 1.5-1.5c.82 0 1.5.68 1.5 1.5S8.58 9 7.75 9zM18 17h-2.5v-3.5c0-.83-.68-1.5-1.5-1.5s-1.5.67-1.5 1.5V17H10v-7h2.5v1c.46-.69 1.23-1 2-1 1.66 0 3 1.34 3 3V17z"/></svg>
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <form class="booking-form reveal" id="booking-form">
+        <div class="form-row">
+          <div class="f-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required/>
+          </div>
+          <div class="f-group">
+            <label>Email</label>
+            <input type="email" placeholder="john@example.com" required/>
+          </div>
+        </div>
+        <div class="f-group">
+          <label>Service Needed</label>
+          <select required>
+            <option value="">Select a service</option>
+            <option>UI/UX Design</option>
+            <option>Shopify Store</option>
+            <option>Logo &amp; Branding</option>
+            <option>Social Media Design</option>
+            <option>Digital Marketing</option>
+            <option>Mobile App UI</option>
+            <option>Web Development</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <label>Budget Range</label>
+          <select>
+            <option value="">Select budget</option>
+            <option>Under $100</option>
+            <option>$100 – $300</option>
+            <option>$300 – $500</option>
+            <option>$500 – $1000</option>
+            <option>$1000+</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <label>Project Details</label>
+          <textarea placeholder="Tell me about your project, goals, and timeline..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message →</button>
+      </form>
+      <div class="form-success" id="form-success">
+        ✓ Message sent! I'll get back to you within 24 hours.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">M.<span>Ahtisham</span></div>
+  <div class="foot-txt">© 2024 Muhammad Ahtisham Aslam · All Rights Reserved</div>
+  <div class="foot-txt">Arifwala, Pakistan</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
